@@ -8,7 +8,7 @@ html {
     box-sizing: inherit;
 }
 
-/* STRÁNKA VZHLED */
+/* MOBILE FIRST STRÁNKA VZHLED */
 body {
     margin: 0;
     background-color: #ef7270;
@@ -17,9 +17,6 @@ body {
 
 .obsah {
     background-color: whitesmoke;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto auto;
 }
 
 /* PÍSMO */
@@ -69,21 +66,11 @@ a:active {
     color: #3b8ea5;
 }
 
-/* HLAVIČKA
-header {
-    height: 300px;
-    background-image: url(obrazky/knihyradamodra.jpeg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-} */
-
 /* ZÁKLADNÍ INFO */
 .zakladni-info {
     padding: 10%;
     background-color:#3b8ea5;
 }
-
 
 .zakladni-info h2 {
     text-align: center;
@@ -96,7 +83,7 @@ header {
 }
 
 .ja {
-    width: 300px;
+    width: 90%;
     border-radius: 50%;
     border: 1px solid black;
 }
@@ -123,4 +110,15 @@ footer {
     background-color: #ef7270;
     color: white;
     padding: 20px;
+}
+
+@media (min-width: 660px) {
+/* STRÁNKA VZHLED */
+
+.obsah {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto;
+}
 }
